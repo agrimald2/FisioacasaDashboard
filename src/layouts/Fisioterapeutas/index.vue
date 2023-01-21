@@ -1,0 +1,55 @@
+<template>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+  <Sidenav />
+  <main class="main-content mt-1 border-radius-lg">
+    <Navbar />
+    <div class="container-fluid py-4">
+      <div class="row">
+        <slot />
+      </div>
+      <footer class="footer pt-3">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-left">
+                © {{ new Date().getFullYear() }} made by
+                <a href="https://e-pask.com" class="font-weight-bold" target="_blank">e-Pask</a>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted" target="_blank">Fisioacasa.pe</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted" target="_blank">¿Cómo funciona?</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted" target="_blank">T&C</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link pe-0 text-muted" target="_blank">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+</template>
+<script>
+import 'bootstrap/dist/js/bootstrap.min.js';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Sidenav from '@/components/FisioSidenav';
+import Navbar from '@/components/Navbar';
+
+export default {
+  name: 'FisioterapeutasLayout',
+
+  components: { Sidenav, Navbar },
+};
+</script>
+<style src="./Fisioterapeutas.css"></style>
