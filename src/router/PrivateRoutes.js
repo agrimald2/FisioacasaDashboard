@@ -4,9 +4,13 @@ const users = () => import('@/modules/Users');
 const fisioterapeutasDNIRegister = () => import('@/modules/Fisioterapeutas/Registro/DNIRegister.vue');
 const fisioterapeutasPreRegister = () => import('@/modules/Fisioterapeutas/Registro/PreRegister.vue');
 const fisioterapeutasDashboard = () => import('@/modules/Fisioterapeutas/Dashboard/Index.vue');
+const fisioterapeutasProfile= () => import('@/modules/Fisioterapeutas/Dashboard/Profile/Index.vue');
 const fisioterapeutasSchedules = () => import('@/modules/Fisioterapeutas/Dashboard/Schedules/Index.vue');
 const fisioterapeutasLocations = () => import('@/modules/Fisioterapeutas/Dashboard/Locations/Index.vue');
 const fisioterapeutasPrices = () => import('@/modules/Fisioterapeutas/Dashboard/Prices/Index.vue');
+const fisioterapeutasAppointments= () => import('@/modules/Fisioterapeutas/Dashboard/Appointments/Index.vue');
+const fisioterapeutasAppointmentDetails= () => import('@/modules/Fisioterapeutas/Dashboard/Appointments/Details/Index.vue');
+
 
 // Export
 export default [
@@ -50,7 +54,7 @@ export default [
   },
   {
     path: '/fisio/profile',
-    component: fisioterapeutasPrices,
+    component: fisioterapeutasProfile,
     name: 'fisio.profile',
   },
   {
@@ -75,8 +79,13 @@ export default [
   },
   {
     path: '/fisio/appointments',
-    component: fisioterapeutasPrices,
+    component: fisioterapeutasAppointments,
     name: 'fisio.appointments',
+  },
+  {
+    path: '/fisio/appointments/1',
+    component: fisioterapeutasAppointmentDetails,
+    name: 'fisio.appointments.details',
   },
 
 ];

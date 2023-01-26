@@ -20,6 +20,41 @@
       <hr class="hr-orange" />
       <EditProfile />
     </div>
+
+    <div class="row" v-else-if="status == 1" style="--bs-gutter-x: 0.75rem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron text-center">
+              <h1 class="display-4">¡Muchas gracias!</h1>
+              <p class="lead">Tu información ha sido recibida y será validada.</p>
+              <hr class="my-4" />
+              <h1><i class="fa-solid fa-clock" style="color: #ed6c14"></i></h1>
+              <h5 class="mt-2 mb-4">Pronto recibirás un mensaje de confirmación y podrás seguir con lo siguiente pasos.</h5>
+              <a class="btn btn-primary btn-lg bg-orange" href="/" role="button">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" v-else-if="status == 3" style="--bs-gutter-x: 0.75rem">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron text-center">
+              <h1 class="display-4">Lo sentimos :/</h1>
+              <p class="lead">No cuenta con el perfil necesario para ser parte de unestro equipo</p>
+              <hr class="my-4" />
+              <h1><i class="fa-solid fa-clock" style="color: #ed6c14"></i></h1>
+              <h5 class="mt-2 mb-4">Por favor, revisa los documentos o subidos o ponte en contacto con nosotros si necesitas ayuda</h5>
+              <a class="btn btn-primary btn-lg bg-orange" href="/" role="button">CONTACTO</a>
+              <a class="btn btn-primary btn-lg bg-blue profile" href="/" role="button">MI PERFIL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </FisioterapeutasLayout>
 </template>
 
@@ -51,11 +86,19 @@ export default {
       Aproved           -> 2
       Denegal           -> 3
       */
-      status: 0,
+      status: 2,
     };
   },
 };
 </script>
 
 <style scoped>
+.profile {
+  margin-left: 2rem;
+}
+@media (max-width: 721px) {
+  .profile {
+    margin-left: 0rem;
+  }
+}
 </style>

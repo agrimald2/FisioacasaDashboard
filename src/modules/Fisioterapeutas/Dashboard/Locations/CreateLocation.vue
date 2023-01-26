@@ -25,9 +25,9 @@ export default {
     return {
       title: 'Agrega Ubicaciones',
       subtitle: 'Busca la dirección exacta en Google Maps',
-      mainIndication: 'Agrega las ubicaciones donde más frecuentas',
+      mainIndication: 'Agrega tus ubicaciones más frecuentes',
       subIndication:
-        'Estás serán utilizadas para la creación de tus horarios, de esta manera nos aseguramos de mandarte pacientes que estén cerca de ti.',
+        'Elige las zonas dónde quisieras ofrecer tus servicios en un radio de hasta 7KM. Ejemplo: Tu domicilio, Centro de trabajo, etc.',
     };
   },
 };

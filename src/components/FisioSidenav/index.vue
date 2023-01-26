@@ -26,20 +26,20 @@
           </a>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" :to="{ name: 'fisio.appointments' }">
+          <a class="nav-link" href="/fisio/appointments">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fas fa-bars"></i>
             </div>
             <span class="nav-link-text ms-1">Citas</span>
-          </router-link>
+          </a>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" :to="{ name: 'fisio.patients' }">
+          <a class="nav-link" href="/fisio/patients">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fas fa-bars"></i>
             </div>
-            <span class="nav-link-text ms-1">Citas</span>
-          </router-link>
+            <span class="nav-link-text ms-1">Pacientes</span>
+          </a>
         </li>
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Mi perfil</h6>
