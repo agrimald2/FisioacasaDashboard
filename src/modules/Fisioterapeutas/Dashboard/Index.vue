@@ -78,6 +78,10 @@ export default {
     EditProfile,
   },
 
+  mounted() {
+    console.log('Hola');
+  },
+
   data() {
     return {
       /*

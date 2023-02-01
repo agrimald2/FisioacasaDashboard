@@ -1,16 +1,21 @@
 // Import Modules
 const dashboard = () => import('@/modules/Dashboard');
 const users = () => import('@/modules/Users');
+
+//FISIO
 const fisioterapeutasDNIRegister = () => import('@/modules/Fisioterapeutas/Registro/DNIRegister.vue');
 const fisioterapeutasPreRegister = () => import('@/modules/Fisioterapeutas/Registro/PreRegister.vue');
 const fisioterapeutasDashboard = () => import('@/modules/Fisioterapeutas/Dashboard/Index.vue');
-const fisioterapeutasProfile= () => import('@/modules/Fisioterapeutas/Dashboard/Profile/Index.vue');
+const fisioterapeutasProfile = () => import('@/modules/Fisioterapeutas/Dashboard/Profile/Index.vue');
 const fisioterapeutasSchedules = () => import('@/modules/Fisioterapeutas/Dashboard/Schedules/Index.vue');
 const fisioterapeutasLocations = () => import('@/modules/Fisioterapeutas/Dashboard/Locations/Index.vue');
 const fisioterapeutasPrices = () => import('@/modules/Fisioterapeutas/Dashboard/Prices/Index.vue');
-const fisioterapeutasAppointments= () => import('@/modules/Fisioterapeutas/Dashboard/Appointments/Index.vue');
-const fisioterapeutasAppointmentDetails= () => import('@/modules/Fisioterapeutas/Dashboard/Appointments/Details/Index.vue');
+const fisioterapeutasAppointments = () => import('@/modules/Fisioterapeutas/Dashboard/Appointments/Index.vue');
+const fisioterapeutasAppointmentDetails = () => import('@/modules/Fisioterapeutas/Dashboard/Appointments/Details/Index.vue');
 
+//PATIENT
+const patientsDashboard = () => import('@/modules/Patients/Dashboard/Index.vue');
+const patientsAppointment = () => import('@/modules/Patients/Appointment/Index.vue');
 
 // Export
 export default [
@@ -87,5 +92,18 @@ export default [
     component: fisioterapeutasAppointmentDetails,
     name: 'fisio.appointments.details',
   },
+
+  //PACIENTES
+  {
+    path: '/patient/dashboard',
+    component: patientsDashboard,
+    name: 'patients.dashboard',
+  },
+
+  {
+    path: '/patient/appointment',
+    component: patientsAppointment,
+    name: 'patients.appointment',
+  }
 
 ];

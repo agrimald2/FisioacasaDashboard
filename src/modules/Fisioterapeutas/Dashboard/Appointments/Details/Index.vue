@@ -46,7 +46,7 @@ export default {
       mainIndication: '',
       // 0 -> Not Validated
       // 1 -> Validated
-      status: 1,
+      status: 1   ,
     };
   },
 };

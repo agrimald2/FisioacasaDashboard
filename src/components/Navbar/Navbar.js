@@ -9,19 +9,19 @@ export default {
   },
 
   mounted() {
-    this.updateList();
+    //this.updateList();
   },
 
   watch: {
-    $route() {
-      this.updateList();
-    },
+    //$route() {
+    //  this.updateList();
+    //},
   },
 
   methods: {
-    updateList() {
-      this.breadCrumbList = this.$route.meta.breadCrumb;
-      this.breadCrumbTotal = this.breadCrumbList.length;
-    },
+    //updateList() {
+    //  this.breadCrumbList = this.$route.meta.breadCrumb;
+    //  this.breadCrumbTotal = this.breadCrumbList.length;
+    //},
   },
 };
